@@ -43,7 +43,7 @@ class TopOneHundredMovies::Movie
         @imdb_ranking = user_input
       else
         while input_requirement(user_input) != true
-          puts "Invalid user selection. Please enter a index between 1-100."
+          puts "Invalid user selection. Please enter a number between 1-100."
           user_input = (gets.strip).to_i
         end
 		@imdb_ranking = user_input
